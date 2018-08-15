@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>San Jose Islamic School</title>
+   <title>San Jose Islamic School</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     </h1>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +38,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active px-lg-4">
+            <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-                <span class="sr-only">(current)</span>
+               
               </a>
             </li>
             <li class="nav-item px-lg-4">
@@ -58,58 +58,70 @@
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="store.html">Donate</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+              <span class="sr-only">(current)</span>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="page-section clearfix">
-      <div class="container">
-        <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/school/student_wall.jpg" alt="">
-
-          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">SJIS</span>
-             <!--  <span class="section-heading-lower">Worth Drinking</span> -->
-            </h2>
-            <p class="mb-3">We are accepting admission for the year 2017-2018.
-Please see us on Sundays between ​September 10th and  20th May, 10AM to 2PM . <br>
-Scholarships offered!
-            </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="admissions.html">Apply Now</a>
-               <a class="btn btn-secondary btn-xl" href="#">Visit Us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
     <section class="page-section cta">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">WELCOME TO</span>
-                <span class="section-heading-lower">SJIS</span>
-              </h2>
-              <p class="mb-0">We are accepting admission for the year 2017-2018. Please see us on Sundays between ​September 10th and  20th May, 10AM to 2PM . 
-              Scholarships offered!!</p>
+             
+              
+              <p class="address mb-5">
+                <em>
+                  <strong>San Jose Islamic School</strong>
+                  <br>
+
+325 N 3rd Street<br>
+
+San Jose, CA 95112<br>
+
+sjis.info@gmail.com<br>
+                </em>
+              </p>
+              <p class="mb-0">
+                <small>
+                  <em>Email</em>
+                </small>
+                <br>
+                 sjis.info@gmail.com
+              </p>
             </div>
           </div>
         </div>
       </div>
-
     </section>
-   
-    <footer class="footer text-faded text-center py-5">
+
+   <!--  <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
+                  <span class="section-heading-lower">About Our Cafe</span>
+                </h2>
+                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
+                <p class="mb-0">We guarantee that you will fall in
+                  <em>lust</em>
+                  with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+     <footer class="footer text-faded text-center py-5">
       <div class="container">
         <p class="m-0 small">Copyright &copy; SJIS 2018</p>
       </div>
@@ -120,5 +132,10 @@ Scholarships offered!
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
+
+  <!-- Script to highlight the active date in the hours list -->
+  <script>
+    $('.list-hours li').eq(new Date().getDay()).addClass('today');
+  </script>
 
 </html>
